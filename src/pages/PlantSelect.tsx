@@ -88,7 +88,9 @@ export function PlantSelect() {
     fetchEnviroment();
   }, []);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetchPlants();
+  }, []);
   if (loading) return <Load />;
   return (
     <View style={styles.container}>
